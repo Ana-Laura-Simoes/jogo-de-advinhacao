@@ -5,7 +5,21 @@ print("Bem vindo ao Jogo de Advinhação!")
 print("********************************")
 
 numero_secreto = random.randrange(1,101)
-total_tentativas = 3
+total_tentativas = 0
+print("Qual nível de dificuldade?")
+print("(1) Fácil \n(2) Médio \n(3) Difícil")
+nivel= int(input("Digite o número do nível escolhido:"))
+
+if (nivel == 1):
+    total_tentativas=20
+
+elif(nivel == 2):
+    total_tentativas=10
+
+
+elif(nivel == 3):
+    total_tentativas=5
+
 tentativa=0
 
 while(tentativa < total_tentativas):
